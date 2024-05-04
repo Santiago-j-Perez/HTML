@@ -1,0 +1,31 @@
+body{
+	margin: 0;
+}
+input{
+	width: 100%;
+	box-sizing: border-box;
+	padding: 6px 12px;
+}
+textarea{
+	min-width: 100%;
+	resize: none;
+	min-height: 50px;
+}
+form{
+	background-color: #ededed;
+	padding: 20px 0;
+	max-width: 600px;
+	margin: auto;
+	box-shadow: 0 0 35px #0003;
+}
+fieldset{
+	border-radius: 5px;
+	border: 1px solid black;
+	padding: 10px;
+}
+legend{
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #333;
+}
+

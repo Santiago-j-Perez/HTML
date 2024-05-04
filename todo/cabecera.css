@@ -1,0 +1,116 @@
+* {
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    height:145vh;
+    position: relative;
+    background-image: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)),
+        url(Informatica.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: 'Courier New', Courier, monospace;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    height: 100px;
+    transition: all 0.5s ease;
+}
+
+h1{
+    color: white;
+}
+
+.logo{
+    height: 50px;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item{
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #f2f2f2;
+}
+
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    width: 65px;
+    height: 65px;
+}
+
+label{
+    cursor: pointer;
+    display: none;
+}
+
+.menu li a{
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	transition: all 0.5s ease;
+    margin-left: 15px;
+}
+
+.menu li a:hover{
+	padding: 5px 10px;
+	background: #fff;
+	color: black;
+	border-radius: 15px;
+}
+
+label img{
+    height: 65px;
+    width: 65px;
+}
+
+@media (max-width:991px){
+
+    .menu{
+        margin: 0;
+        line-height: 50px;
+    }
+
+    label{
+        display: initial;
+    }
+
+    .menu{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: black;
+        display: none;
+    }
+
+    .menu.active{
+        background-color: black;
+    }
+    
+    #menu:checked ~ .menu{
+        display: initial;
+    }
+
+}

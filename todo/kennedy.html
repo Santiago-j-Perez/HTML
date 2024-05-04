@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+   <html lang="es">
+      <head>
+         <link rel="stylesheet" href="kennedy.css">
+         <link rel="stylesheet" href="kennedy.js">
+      <title>EEST5Lanus.edu.ar</title>
+      <meta charset="UTF-8">
+      <meta name="viewport">
+      <meta name="keywords" content="Colegio, Lanus, Cabrero, Programacion, Electromecanica, Informatica ">
+      <meta name="language" content="es">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      </head>
+      <body>
+        <header id="header">
+          <img src="foto.logo.png" class="logo">
+          <input type="checkbox"  id="menu">
+          <label for="menu">
+              <img src="colegio.jpeg" class="menu.icono">
+          </label>
+          <ul class="menu">
+              <li ><a href="Centro-de-estudiantes.html"> Centro de Centro-de-estudiantes</a></li>
+              <li ><a href="Contacto.html">Contacto</a></li>
+              <li ><a href="especialidades.html">Especialidades</a></li>
+              <li ><a href="Autoridades.html">Autoridades</a></li>
+          </ul>
+      </header>
+        <div class="scrol">
+        <script >
+          const nav = document.querySelector('.nav');
+        window.addEventListener('scroll', function() {
+            nav.classList.toggle('active', window.scrollY > 0);
+        });
+        </script>
+         <h2 class="noticias">Nuestras noticias</h2>
+         <div id="carouselExampleIndicators" class="carousel" data-bs-ride="true">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="manzana2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="colegio.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="colegio1.jpeg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div class="especialidades">
+          <div class="card">
+            <figure>
+              <img src="Informatica.jpg">
+            </figure>
+            <div class="info">
+              <h3>Informatica</h3>
+              <p>Informatica se trata de yqs</p>
+              <a href="Informatica.html">Ver mas</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <figure>
+              <img src="Electromecanica.jpeg">
+            </figure>
+            <div class="info">
+              <h3>Electromecanica</h3>
+              <p>Electromecanica se trata de yqs</p>
+              <a href="Electromecanica.html">Ver mas</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <figure>
+              <img src="programacion.jpeg">
+            </figure>
+            <div class="info">
+              <h3>Programacion</h3>
+              <p>Programacion se trata de yqs</p>
+              <a href="programacion.html">Ver mas</a>
+            </div>
+          </div>
+        </div>
+         <footer>
+         <p>Escuela de Educacion Tecnica Nº5 de Lanus<br>
+         	Ex escuela Nacional de Educacion tecnica Nº1<br>
+          John Fitzgerald Kennedy<br>
+          Ramon Cabrero 1751(Codigo Postal: 1824) Lanus Este<br>
+          Tel: +54 0 11 4241-8547/4240-5026<br>
+          e-mail: tecnicacincolanus@yahoo.com.ar</p>
+         </footer>
+      </body>
+   </html>
