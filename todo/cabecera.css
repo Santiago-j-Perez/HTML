@@ -113,4 +113,7 @@ label img{
         display: initial;
     }
 
+    #menu:checked ~ .title{
+        color: #f00909;
+    }
 }
