@@ -4,18 +4,22 @@
 }
 
 body{
-    height: 145vh;
     position: relative;
+    height: 100px;
     background-image: linear-gradient(
         rgba(0,0,0,0.4),
         rgba(0,0,0,0.4)),
         url(Informatica.jpg);
-        width: 100%;
-        height: 400px;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 100% 1100px;
         font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+.informatica.jpg {
+    height: 100px;
 }
 
 header{
@@ -34,6 +38,7 @@ header{
 
 h1{
     color: white;
+    max-width: 480px;
 }
 
 .logo{
@@ -60,11 +65,11 @@ h1{
 .menu-icono{
     width: 65px;
     height: 65px;
+    display: none;
 }
 
 label{
     cursor: pointer;
-    display: none;
 }
 
 .menu li a{
@@ -87,6 +92,16 @@ label{
     .menu{
         padding: 30px;
         margin: 0;
+    }
+
+    h1{
+
+    }
+
+    .menu-icono{
+        display: block;
+        height: 70px;
+        width: 70px;
     }
 
     label{
@@ -118,7 +133,20 @@ label{
 }
 
 .carousel-entero{
-    padding: 700px 20px 0 20px;
+    padding: 700px 0 0 40px;
+}
+
+.noticias{
+    padding-right: 700px;
+}
+
+.noticias .carousel-entero{
+    text-align: center;
+}
+
+.carousel{
+    min-width: 300px;
+    max-width: 700px;
 }
 
 .especialidades{
@@ -128,19 +156,20 @@ label{
 }
 
 .card{
+    display: flex;
+    margin: 20px;
 	width: 100%;
-	margin: 20px;
-	border-radius: 6px;
+	border-radius: 15px;
 	overflow: hidden;
 	background: #fff;
 	box-shadow: 0 1px 10px rgba(0,0,0,0.2);
-	cursor: default;	
-	transition: all 400ms ease;
+	cursor: pointer;
+    transition:all 0.9s ease;
 }
 
 .card:hover{
 	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
-	transform: translateY(-3%);
+	transform: translateY(-4%);
 }
 
 .card img{
