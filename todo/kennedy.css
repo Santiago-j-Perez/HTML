@@ -16,12 +16,6 @@ body{
         font-family: 'Courier New', Courier, monospace;
 }
 
-
-
-.informatica.jpg {
-    height: 100px;
-}
-
 header{
     width: 100%;
     position: fixed;
@@ -30,7 +24,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 5%;
+    padding: 0 3dvb;
     height: 100px;
     transition: all 0.9s ease;
     z-index: 30;
@@ -38,11 +32,10 @@ header{
 
 h1{
     color: white;
-    max-width: 480px;
 }
 
 .logo{
-    height: 50px;
+    height: 80px;
 }
 
 .menu{
@@ -92,10 +85,6 @@ label{
     .menu{
         padding: 30px;
         margin: 0;
-    }
-
-    h1{
-
     }
 
     .menu-icono{
@@ -150,38 +139,63 @@ label{
 }
 
 .especialidades{
-	width: 100%;
-	display: flex;
-	max-width: 1100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    padding: 70px 20px;
+    width: 100%;
+    height: auto;
 }
 
 .card{
-    display: flex;
-    margin: 20px;
-	width: 100%;
-	border-radius: 15px;
-	overflow: hidden;
-	background: #fff;
-	box-shadow: 0 1px 10px rgba(0,0,0,0.2);
-	cursor: pointer;
+    text-align: center;
+    margin: 10px;
+    border-radius: 15px;
+    background: #fff;
+    cursor: pointer;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.2);
     transition:all 0.9s ease;
+    height: 100%;
 }
 
 .card:hover{
-	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
-	transform: translateY(-4%);
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-4%);
+    color: black;
+    transition-delay: .3s;
+}
+
+a .card:hover{
+    color: black;
 }
 
 .card img{
-	width: 100%;
-	height: 210px;
-	padding: 0;
+    width: 100%;
+    height: 210px;
+    padding: 0;
 }
 
 .info{
-	padding: 15px;
-	text-align: center;
+    padding: 15px;
+    text-align: center;
 }
+
+.enlace-especialidad{
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width: 1024px) {
+    .card {
+      flex-basis: 45%; /* Dos columnas en pantallas medianas */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      flex-basis: 100%; /* Una columna en pantallas pequeñas */
+    }
+  }
 
 footer {
 	background-color: black; 
